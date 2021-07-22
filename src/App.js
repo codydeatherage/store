@@ -10,18 +10,18 @@ function App() {
     return (
         <Router>
             <NavBar />
-            <Switch>
-              {/* <Route path="/" exact component={App}></Route> */}
-                {/* <Route path="/movies/list" exact component={MoviesList} /> */}
-                {/* <Route path="/movies/create" exact component={MoviesInsert} />
+            {/* <Switch>
+               <Route path="/" exact component={App}></Route> }
+                <Route path="/movies/list" exact component={MoviesList} /> }
+                 <Route path="/movies/create" exact component={MoviesInsert} />
                 <Route
                     path="/movies/update/:id"
                     exact
                     component={MoviesUpdate}
                 />
                 <Route path="/search" exact component={SummonerSearch} />
-                <Route path={'/search/:name'} exact component={PlayerData} /> */}
-            </Switch>
+                <Route path={'/search/:name'} exact component={PlayerData} /> 
+            </Switch> */}
         </Router>
     )
 }

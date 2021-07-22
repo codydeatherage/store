@@ -1,17 +1,30 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-
+import { Link } from 'react-router-dom'
 import Logo from './Logo'
-import Links from './Links'
 
-const Container = styled.div.attrs({
-    className: 'container',
-})``
+const Container = styled.div`
+    width: 100%;
+    padding: 0;
+    border: 2px solid red;
+`
 
 const Nav = styled.nav.attrs({
-    className: 'navbar navbar-expand-lg navbar-dark bg-dark',
+    className: 'navbar-dark bg-dark',
 })`
-    margin-bottom: 20 px;
+    position: relative;
+    display: flex;
+    width: 100%;
+`
+const Links = styled.div`
+    position: absolute;
+    right: 0;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 0;
+    height: 100%:
 `
 
 class NavBar extends Component {
@@ -20,7 +33,21 @@ class NavBar extends Component {
             <Container>
                 <Nav>
                     <Logo />
-                    <Links />
+
+                    <Link to="/" className="navbar-brand">
+                        ThreadBear
+                    </Link>
+                    <Links>
+                        <Link to="/movies/list" className="nav-link">
+                            List Movies
+                        </Link>
+                        <Link to="/movies/list" className="nav-link">
+                            List Movies
+                        </Link>
+                        <Link to="/movies/list" className="nav-link">
+                            List Movies
+                        </Link>
+                    </Links>
                 </Nav>
             </Container>
         )
